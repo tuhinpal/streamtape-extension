@@ -1,7 +1,7 @@
 {
   "name": "streamtape-extension",
   "version": "1.0.0",
-  "description": "StreamTape AdFree player with download with minimal effort",
+  "description": "Download or play StreamTape.com videos AdFree with minimal effort",
   "scripts": {
     "patchdomains": "node ./scripts/patch-domains.js"
   },

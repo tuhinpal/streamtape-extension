@@ -1,6 +1,6 @@
 {
   "name": "StreamTape Extension",
-  "description": "StreamTape AdFree player with download with minimal effort",
+  "description": "Download or play StreamTape.com videos AdFree with minimal effort",
   "background": {
     "service_worker": "worker.js"
   },
