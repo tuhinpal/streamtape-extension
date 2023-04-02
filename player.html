@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/tailwind.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="bg-black min-h-screen flex-col gap-5 text-white flex justify-center items-center"
+      id="loading"
+    >
+      <p class="text-lg">Parsing video please wait...</p>
+    </div>
+
+    <div
+      class="bg-black min-h-screen hidden flex-col gap-5 text-white justify-center items-center"
+      id="error"
+    >
+      <p class="text-lg text-red-500" id="errorMsg">Error parsing video</p>
+      <button class="text-lg" id="reloadButton">Reload</button>
+    </div>
+
+    <div
+      id="loaded"
+      class="bg-black min-h-screen w-full hidden text-white items-center justify-start p-5 flex-col outline-none"
+    >
+      <h1 class="text-2xl font-bold text-center mb-5" id="title">
+        Streamtape Extension
+      </h1>
+
+      <div class="lg:w-3/6 w-5/6">
+        <video
+          id="video"
+          class="w-full h-full rounded-md outline-none border border-white"
+          controls
+          id="video"
+        ></video>
+      </div>
+      <div class="w-full mt-5 gap-4 flex justify-center items-center flex-col">
+        <div class="text-center">
+          <p>
+            <span class="font-bold">Resolution:</span>
+            <span id="resolution">Loading...</span>
+          </p>
+
+          <p>
+            <span class="font-bold">Size:</span>
+            <span id="size">Loading...</span>
+          </p>
+          <p>
+            <span class="font-bold">Duration:</span>
+            <span id="duration">Loading...</span>
+          </p>
+        </div>
+
+        <div class="flex gap-2 text-xs font-semibold">
+          <button
+            class="bg-blue-500 border border-blue-500 hover:bg-blue-600 text-white py-1 px-4 rounded-md"
+            id="downloadButton"
+          >
+            Download
+          </button>
+
+          <button
+            class="bg-white border border-blue-500 hover:bg-blue-100 text-blue-500 py-1 px-4 rounded-md"
+            id="copyButton"
+          >
+            Copy link
+          </button>
+        </div>
+
+        <a
+          class="font-bold hover:underline"
+          href="https://github.com/tuhinpal/streamtape-extension"
+          target="_blank"
+          rel="noopener noreferrer"
+          >⭐ Star it on Github</a
+        >
+      </div>
+    </div>
+
+    <script src="/assets/client.js"></script>
+  </body>
+</html>

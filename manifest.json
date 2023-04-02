@@ -1,0 +1,14 @@
+{
+  "name": "StreamTape Extension",
+  "description": "StreamTape AdFree player with download with minimal effort",
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "host_permissions": ["https://streamtape.to/*", "https://streamtape.com/*"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "permissions": ["https://streamtape.com/*", "https://streamtape.to/*"]
+}

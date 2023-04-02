@@ -1,0 +1,11 @@
+{
+  "name": "streamtape-extension",
+  "version": "1.0.0",
+  "description": "StreamTape AdFree player with download with minimal effort",
+  "scripts": {
+    "patchdomains": "node ./scripts/patch-domains.js"
+  },
+  "keywords": [],
+  "author": "Tuhin Kanti Pal <me@thetuhin.com>",
+  "license": "ISC"
+}
